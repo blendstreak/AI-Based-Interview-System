@@ -1,11 +1,9 @@
-import { useState } from 'react';
 import { createBrowserRouter , RouterProvider} from 'react-router-dom';
-import './App.css';
 import Home from './components/Home';
 import Premium from './components/Premium';
 import About from './components/About';
 import Login from './components/Login';
-
+import Navi from './components/nav';
 const router = createBrowserRouter(
  [
      {
@@ -35,9 +33,10 @@ const router = createBrowserRouter(
 function App() {
 
   return (
-    <> 
+    <div className='md:mt-52 mt-28 duration-1000'>
+      <Navi/>
       <RouterProvider router = {router}/>
-    </>
+    </div>
   );
 }
 

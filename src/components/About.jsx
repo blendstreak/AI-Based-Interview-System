@@ -1,5 +1,4 @@
 import React from "react";
-import '../App.css';
 import Navi from "./nav";
 
 
@@ -9,8 +8,8 @@ const About = () =>
     return(
         <div className="h-300 bg-[#121212] text-white">
             <Navi/>
-            <div>
-                <div className="flex gap-9">
+            <div className="flex flex-col items-center">
+                <div className="flex flex-col lg:flex-row gap-9">
                     <img className=" m-10 h-90 w-auto" src="../cat.jpg" alt="greet" />
                     <img className=" m-10 h-90 w-auto" src="../cat2.jpg" alt="greet" />
                 </div>

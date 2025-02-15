@@ -1,7 +1,6 @@
 import React from "react";
 import Frame from "./Frame";
 import Navi from "./nav";
-import '../App.css';
 
 const Home = () =>
 {
